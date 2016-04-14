@@ -6,9 +6,14 @@
  * @return int Hamming distance
  */
 function distance($a, $b)
-{
-	if(strlen($a) != strlen($b))
-		throw new InvalidArgumentException('DNA strands must be of equal length.');
+{   
+	if ($a == $b) {
+		return 0;
+	}
+	
+	if(strlen($a) != strlen($b)) {
+		throw new InvalidArgumentException( 'DNA strands must be of equal length.' );
+	}
 
 	$diff = array_map(function($a, $b){
 		return $a != $b;
