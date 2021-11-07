@@ -20,7 +20,7 @@ def find_fewest_coins(coins, target):
 
 
 if __name__ == '__main__':
-    #print(find_fewest_coins([1], 3))
+    print(find_fewest_coins([2], 4))
     #print(find_fewest_coins([4, 5], 27))  # [4, 4, 4, 5, 5, 5]
-    print(find_fewest_coins([1, 4, 15, 20, 50], 23))  # [4, 4, 15]
+    #print(find_fewest_coins([1, 4, 15, 20, 50], 23))  # [4, 4, 15]
     #print(find_fewest_coins([5, 10], 94))
