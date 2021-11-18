@@ -34,6 +34,8 @@ def answer(question):
         raise ValueError("syntax error")
 
     if len(valid_mask) % 2 == 0:
+        if expression[-2] == 'multiplied':
+            raise ValueError("unknown operation")
         if not valid_mask[1] and not valid_mask[2]:
             raise ValueError("syntax error")
         if valid_mask[-2] and valid_mask[-1]:
